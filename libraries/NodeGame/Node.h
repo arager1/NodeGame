@@ -34,18 +34,18 @@ class Node {
     const char *getName() { return name; }
 
   private:
-    const char *name; 
-    int pinLED;           
-    int pinButton;      
-    int pinPiezo;     
-    int pitch;        
-    
     // Activate LED and noisemaker
     void on();
     // Deactivate LED and noisemaker     
     void off();
 
     bool buttonPressed(); 
+
+    const char *name; 
+    int pinLED;           
+    int pinButton;      
+    int pinPiezo;     
+    int pitch;
 };
 
 #endif

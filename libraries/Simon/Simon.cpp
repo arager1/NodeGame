@@ -77,7 +77,7 @@ void Simon::testing(){
 void Simon::printSequence(){
   Serial.print("[ ");
   for (int i = 0; i < level; i++){
-    Serial.print(game->getNode(correctSequence[i])->name);
+    Serial.print(game->getNode(correctSequence[i])->getName());
     Serial.print(" ");
   }
   Serial.print("]");
